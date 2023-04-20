@@ -1,0 +1,43 @@
+$color-background: bisque;
+$color-triangle: green;
+$color-text: #e4ddcf;
+
+.Home {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    width: 100%;
+
+/* Triangle background
+    &::before {
+        content: '';
+        position: absolute;
+        bottom: 40%;
+        left: 50%;
+        border-style: solid;
+        border-width: 0 9.375rem 30vh 9.375rem;
+        border-color: transparent transparent $color-background transparent;
+        z-index: 1;
+        transform: translateX(-50%) rotate(180deg);
+        -webkit-transform: translateX(-50%) rotate(180deg);
+        -moz-transform: translateX(-50%) rotate(180deg);
+        -ms-transform: translateX(-50%) rotate(180deg);
+        -o-transform: translateX(-50%) rotate(180deg);
+    }
+    @media (min-width: 1200px) {
+        &::before {
+            bottom: 30%;
+            left: 50%;
+            border-width: 0 15.625rem 40vh 15.625rem;
+        }
+    }
+*/
+    
+    .Home-p {
+        font-size: 3rem;
+        color: $color-text;
+        z-index: 1;
+    }
+}

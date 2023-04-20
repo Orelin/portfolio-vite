@@ -1,14 +1,14 @@
 .Header {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    max-height: 10vh;
     margin: 0 1.5em;
     padding: 2em 0;
     border-bottom: 2px solid #e4ddcf;
-    min-height: 2em;
-    color: black;
+    color: #e4ddcf;
     &-div {
     }
-    &-p {
+    &-p-logo {
         margin: auto 0;
         -webkit-animation: focus-in-expand 0.8s cubic-bezier(0.39, 0.575, 0.565, 1) both;
         animation: focus-in-expand 0.8s cubic-bezier(0.39, 0.575, 0.565, 1) both;
@@ -16,8 +16,12 @@
     &-nav {
         text-align: -webkit-right;
     }
+    &-hamburger{
+        display: none;
+    }
     &-ul {
         position: fixed;
+        display: none;
         right: 1.5em;
         z-index: 2;
     }
@@ -42,8 +46,15 @@
     }
 }
 
+@media (min-width: 768px) {
+    .Header-ul {
+        display: flex;
+        gap: 2em;
+    }
+    
+}
 
-//Logo (?
+//Logo animation (?
 @-webkit-keyframes focus-in-expand {
     0% {
         letter-spacing: -0.5em;

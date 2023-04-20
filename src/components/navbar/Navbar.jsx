@@ -14,10 +14,10 @@ function Navbar({ data }) {
                 <FaBars/>
             </button>
             <ul className={`Header-ul ${showMenu ? 'show' : ''}`}>
-                {data.map((item) => (
-                    <li className="Header-li" key={item.title}>
-                        <a className="Header-a" href={item.url}>
-                            {item.title}
+                {data.map(({id, title, url}) => (
+                    <li className="Header-li" key={id}>
+                        <a className="Header-a" href={url}>
+                            {title}
                         </a>
                     </li>
                 ))}
