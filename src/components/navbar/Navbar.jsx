@@ -1,8 +1,6 @@
 import { useState } from 'react';
-import { FaBars } from "react-icons/fa";
+import { FaBars } from 'react-icons/fa';
 function Navbar({ data }) {
-
-
     const [showMenu, SetShowMenu] = useState(false);
     const changeMenu = () => {
         return SetShowMenu(!showMenu);
@@ -11,10 +9,10 @@ function Navbar({ data }) {
     return (
         <nav className="Header-nav">
             <button className="Header-hamburger" onClick={changeMenu}>
-                <FaBars/>
+                <FaBars />
             </button>
             <ul className={`Header-ul ${showMenu ? 'show' : ''}`}>
-                {data.map(({id, title, url}) => (
+                {data.map(({ id, title, url }) => (
                     <li className="Header-li" key={id}>
                         <a className="Header-a" href={url}>
                             {title}

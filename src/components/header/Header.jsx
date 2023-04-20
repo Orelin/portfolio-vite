@@ -1,19 +1,17 @@
 import { useContext } from 'react';
-import { GlobalContext } from "../../../src/provider/Provider"
+import { GlobalContext } from '../../../src/provider/Provider';
 import Navbar from '../navbar/Navbar';
-import Logo from "../logo/Logo";
-import "./Header.scss"
-
+import Logo from '../logo/Logo';
+import './Header.scss';
 
 function Header() {
-
-    const { header } = useContext(GlobalContext)
-    const { menu, rrss } = header
+    const { header } = useContext(GlobalContext);
+    const { menu, rrss } = header; // rrss seran visibles en el footer
 
     return (
         <div className="Header">
-            <Logo/>
-            <Navbar data={menu}/>
+            <Logo />
+            <Navbar data={menu} />
         </div>
     );
 }

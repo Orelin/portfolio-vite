@@ -6,7 +6,7 @@ const bbdd = {
     header : {
         menu : [
             { id : uuidv4(), title : "Home", href : "#"},
-            { id : uuidv4(), title : "Projects", href : "#"},
+            //{ id : uuidv4(), title : "Projects", href : "#"},
             { id : uuidv4(), title : "Contact", href : "#"},
             { id : uuidv4(), title : "About me", href : "#"}
         ],

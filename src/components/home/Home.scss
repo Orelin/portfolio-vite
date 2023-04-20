@@ -1,6 +1,5 @@
-$color-background: bisque;
-$color-triangle: green;
-$color-text: #e4ddcf;
+$color-primary: #e4ddcf;
+$color-secundary: #1e1e1e;
 
 .Home {
     position: relative;
@@ -10,7 +9,7 @@ $color-text: #e4ddcf;
     height: 90vh;
     width: 100%;
 
-/* Triangle background
+    /* Triangle background
     &::before {
         content: '';
         position: absolute;
@@ -34,10 +33,13 @@ $color-text: #e4ddcf;
         }
     }
 */
-    
-    .Home-p {
-        font-size: 3rem;
-        color: $color-text;
+
+    &-p {
+        font-size: 4rem;
+        color: $color-primary;
         z-index: 1;
+        @media (max-width: 768px) {
+            font-size: 2rem;
+        }
     }
 }
