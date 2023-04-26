@@ -3,8 +3,8 @@ $color-secundary: #1e1e1e;
 $sm: 768px;
 
 .Home {
-    position: relative;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 90vh;
@@ -15,17 +15,17 @@ $sm: 768px;
         position: absolute;
         bottom: 40%;
         border-style: solid;
-        border-width: 0 9.375rem 30vh 9.375rem;
+        border-width: 0 6.25rem 20vh 6.25rem;
         border-color: transparent transparent $color-primary transparent;
         z-index: 1;
-        -webkit-animation: rotate-center 20s linear infinite both;
-        animation: rotate-center 20s linear infinite both;
+        animation: rotate-center 20s linear 4s infinite both;
+        -webkit-animation: rotate-center 20s linear 4s infinite both;
         transform: translateX(-50%) rotate(180deg);
         -webkit-transform: translateX(-50%) rotate(180deg);
         -moz-transform: translateX(-50%) rotate(180deg);
         -ms-transform: translateX(-50%) rotate(180deg);
         -o-transform: translateX(-50%) rotate(180deg);
-    }
+}
 
     @media (min-width: $sm) {
         &::before {
@@ -36,7 +36,6 @@ $sm: 768px;
     }
 
     &-p {
-        position: relative;
         font-size: 4rem;
         padding-bottom: 5rem;
         z-index: 2;
@@ -44,10 +43,21 @@ $sm: 768px;
         color: $color-primary;
         -webkit-animation: text-flicker-in-glow 4s linear both;
         animation: text-flicker-in-glow 4s linear both;
-
+        &-name {
+            font-size: 3rem;
+            padding-bottom: 1rem;
+            z-index: 2;
+            mix-blend-mode: difference;
+            text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
+            color: $color-primary;
+        }
         @media (max-width: $sm) {
             font-size: 2.5rem;
             padding-bottom: 7rem;
+            &-name {
+                font-size: 2rem;
+                padding-bottom: .5rem;
+            }
         }
     }
 
