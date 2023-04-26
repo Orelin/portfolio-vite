@@ -28,13 +28,13 @@ function Navbar({ data }) {
 
     return (
         <nav className="Header-nav">
-            <button ref={btnMenuRef} className="Header-hamburger" onClick={() => setShowMenu(!showMenu)}>
+            <button ref={btnMenuRef} className="Header-hamburger" alt="Menu Button" onClick={() => setShowMenu(!showMenu)}>
                 <FaBars />
             </button>
             <ul ref={ulMenuRef} className={`Header-ul ${showMenu ? 'show' : ''}`}>
                 {data.map(({ id, title, href }) => (
                     <li className="Header-li" key={id}>
-                        <a className="Header-a" href={href}>
+                        <a className="Header-a" href={href} alt={title} >
                             {title}
                         </a>
                     </li>
