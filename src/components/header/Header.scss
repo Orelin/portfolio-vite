@@ -1,22 +1,23 @@
 .Header {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    justify-content: space-between;
     max-height: 10vh;
     margin: 0 1.5em;
-    padding: 2em 0;
+    padding: calc(5vh - 2px) 0;
     border-bottom: 2px solid #e4ddcf;
     color: #e4ddcf;
     &-div {
     }
     &-p-logo {
         margin: auto 0;
+        font-size: 1.5rem;
         -webkit-animation: focus-in-expand 0.8s cubic-bezier(0.39, 0.575, 0.565, 1) both;
         animation: focus-in-expand 0.8s cubic-bezier(0.39, 0.575, 0.565, 1) both;
     }
     &-nav {
         text-align: -webkit-right;
     }
-    &-hamburger{
+    &-hamburger {
         display: none;
     }
     &-ul {
@@ -29,29 +30,54 @@
         padding: 0.5em 0;
     }
     &-a {
+        font-size: 1.2em;
     }
-}
-
-@media (max-width: 768px) {
-    .Header-hamburger {
-        display: block;
-    }
-
-    .Header-ul {
-        display: none;
+    &-a:hover {
+        background-color: #e4ddcf49;
+        font-size: 125%;
     }
 
-    .Header-ul.show {
-        display: block;
-    }
-}
+    //Media queries
+    @media (max-width: 768px) {
+        //Mobile
+        &-hamburger {
+            display: block;
+        }
 
-@media (min-width: 768px) {
-    .Header-ul {
-        display: flex;
-        gap: 2em;
+        &-ul {
+            display: none;
+        }
+
+        &-ul.show {
+            display: block;
+            padding-top: 2em;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(30, 30, 30, 0.21);
+            backdrop-filter: blur(1.2px);
+            border-radius: 1rem;
+            -webkit-backdrop-filter: blur(4.2px);
+            -webkit-border-radius: 1rem;
+            -moz-border-radius: 1rem;
+            -ms-border-radius: 1rem;
+            -o-border-radius: 1rem;
+            animation: fade-in 2s linear;
+            -webkit-animation: fade-in 2s linear;
+            -moz-animation: fade-in 2s linear;
+            -ms-animation: fade-in 2s linear;
+            -o-animation: fade-in 2s linear;
+        }
+        &-a {
+            font-size: 1em;
+        }
     }
-    
+
+    @media (min-width: 768px) {
+        //Tablet/PC
+        &-ul {
+            display: flex;
+            gap: 2em;
+        }
+    }
 }
 
 //Logo animation (?
@@ -78,6 +104,15 @@
     100% {
         -webkit-filter: blur(0px);
         filter: blur(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
         opacity: 1;
     }
 }
