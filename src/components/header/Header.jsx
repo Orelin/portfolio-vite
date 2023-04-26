@@ -9,7 +9,7 @@ function Header() {
     const { menu, rrss } = header; // rrss seran visibles en el footer
 
     return (
-        <div className="Header">
+        <div className="Header" id='Header'>
             <Logo />
             <Navbar data={menu} />
         </div>

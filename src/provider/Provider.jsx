@@ -7,8 +7,8 @@ const bbdd = {
         menu : [
             { id : uuidv4(), title : "Home", href : "#"},
             //{ id : uuidv4(), title : "Projects", href : "#"},
-            { id : uuidv4(), title : "Contact", href : "#"},
-            { id : uuidv4(), title : "About me", href : "#"}
+            { id : uuidv4(), title : "About me", href : "#About"},
+            { id : uuidv4(), title : "Contact", href : "#Contact"},
         ],
         rrss : [
             { id : uuidv4(), title : "Linkedin", href : "#", icono : "Linkedin"},
