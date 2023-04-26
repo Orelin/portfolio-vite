@@ -1,6 +1,7 @@
 $color-primary: #e4ddcf;
 $color-secundary: #1e1e1e;
 $sm: 768px;
+$animation-delay: 2s;
 
 .Home {
     display: flex;
@@ -13,25 +14,27 @@ $sm: 768px;
     &::before {
         content: '';
         position: absolute;
-        bottom: 40%;
+        bottom: 30%;
+        left: 50%;
         border-style: solid;
-        border-width: 0 6.25rem 20vh 6.25rem;
+        border-width: 0 15.625rem 40vh 15.625rem;
         border-color: transparent transparent $color-primary transparent;
         z-index: 1;
-        animation: rotate-center 20s linear 4s infinite both;
-        -webkit-animation: rotate-center 20s linear 4s infinite both;
+        animation: rotate-center 20s linear $animation-delay infinite both;
+        -webkit-animation: rotate-center 20s linear $animation-delay infinite both;
         transform: translateX(-50%) rotate(180deg);
         -webkit-transform: translateX(-50%) rotate(180deg);
         -moz-transform: translateX(-50%) rotate(180deg);
         -ms-transform: translateX(-50%) rotate(180deg);
         -o-transform: translateX(-50%) rotate(180deg);
-}
+    }
 
-    @media (min-width: $sm) {
+    @media (max-width: $sm) {
         &::before {
-            bottom: 30%;
+            position: fixed;
+            bottom: 40%;
             left: 50%;
-            border-width: 0 15.625rem 40vh 15.625rem;
+            border-width: 0 6.25rem 20vh 6.25rem;
         }
     }
 
@@ -41,8 +44,8 @@ $sm: 768px;
         z-index: 2;
         mix-blend-mode: difference;
         color: $color-primary;
-        -webkit-animation: text-flicker-in-glow 4s linear both;
-        animation: text-flicker-in-glow 4s linear both;
+        -webkit-animation: text-flicker-in-glow $animation-delay linear both;
+        animation: text-flicker-in-glow $animation-delay linear both;
         &-name {
             font-size: 3rem;
             padding-bottom: 1rem;
@@ -56,7 +59,7 @@ $sm: 768px;
             padding-bottom: 7rem;
             &-name {
                 font-size: 2rem;
-                padding-bottom: .5rem;
+                padding-bottom: 0.5rem;
             }
         }
     }
