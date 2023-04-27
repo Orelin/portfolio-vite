@@ -13,7 +13,7 @@ $animation-delay: 2s;
 
     &::before {
         content: '';
-        position: absolute;
+        position: fixed;
         bottom: 30%;
         left: 50%;
         border-style: solid;
@@ -27,14 +27,16 @@ $animation-delay: 2s;
         -moz-transform: translateX(-50%) rotate(180deg);
         -ms-transform: translateX(-50%) rotate(180deg);
         -o-transform: translateX(-50%) rotate(180deg);
-    }
+}
+
+    //!Agregar clase about para que se vea el texto moviendo el before con una transicion 
 
     @media (max-width: $sm) {
         &::before {
             position: fixed;
             bottom: 40%;
             left: 50%;
-            border-width: 0 6.25rem 20vh 6.25rem;
+            border-width: 0 7.8125rem 20vh 7.8125rem;
         }
     }
 
@@ -333,20 +335,27 @@ $animation-delay: 2s;
 @-webkit-keyframes rotate-center {
     0% {
         -webkit-transform: rotate(0);
-        transform: rotate(0);
-    }
+}
     100% {
         -webkit-transform: rotate(360deg);
         transform: rotate(360deg);
-    }
+}
 }
 @keyframes rotate-center {
     0% {
         -webkit-transform: rotate(0);
         transform: rotate(0);
-    }
+        filter: blur(1px);
+        -webkit-filter: blur(1px);
+}
+    50% {
+        filter: blur(3px);
+        -webkit-filter: blur(3px);
+}
     100% {
         -webkit-transform: rotate(360deg);
         transform: rotate(360deg);
-    }
+        filter: blur(1px);
+        -webkit-filter: blur(1px);
+}
 }
