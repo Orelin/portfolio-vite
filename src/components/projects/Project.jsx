@@ -48,12 +48,12 @@ function Project() {
                         <img
                             className="Project-carrousel-img"
                             src="https://drive.google.com/uc?export=download&id=1431nMoMoytL6nDkp3hgMlnhwO-FyERyX"
-                            alt="Imagen 1"
+                            alt="Project 2 Imagen 1"
                         />
                         <img
                             className="Project-carrousel-img"
                             src="https://drive.google.com/uc?export=download&id=142_a1lpIRaC6899I1wurIWjydWPcPsV5"
-                            alt="Imagen 2"
+                            alt="Project 2 Imagen 2"
                         />
                     </div>
                     <div className="Project-carrousel-text">
