@@ -6,15 +6,14 @@ const bbdd = {
     header : {
         menu : [
             { id : uuidv4(), title : "Home", href : "#"},
-            //{ id : uuidv4(), title : "Projects", href : "#"},
-            { id : uuidv4(), title : "About me", href : "#About"},
-            { id : uuidv4(), title : "Contact", href : "#Contact"},
+            { id : uuidv4(), title : "Projects", href : "#Projects"},
+            { id : uuidv4(), title : "Download CV", href : "https://drive.google.com/uc?export=download&id=1vc1EbK2VqjgdC4tjgt0e1CEw9oDZZKx2"},
+            { id : uuidv4(), title : "Contact", href : "https://wa.link/z3jqcm"},
         ],
         rrss : [
-            { id : uuidv4(), title : "Linkedin", href : "#", icono : "Linkedin"},
-            { id : uuidv4(), title : "Github", href : "#", icono : "Github"},
-            { id : uuidv4(), title : "Download CV", href : "#", title : "Download CV"}
-
+            { id : uuidv4(), title : "Linkedin", href : "https://github.com/Orelin", icono : "Linkedin"},
+            { id : uuidv4(), title : "Github", href : "https://www.linkedin.com/in/dahian-sosa/", icono : "Github"},
+            { id : uuidv4(), title : "Download CV", href : "https://drive.google.com/uc?export=download&id=1vc1EbK2VqjgdC4tjgt0e1CEw9oDZZKx2", icono : "Download CV"}
         ]
     }
 }

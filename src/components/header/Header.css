@@ -1,0 +1,120 @@
+.Header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-height: 10vh;
+  margin: 0 1.5em;
+  padding: calc(5vh - 2px) 0;
+  border-bottom: 2px solid #e4ddcf;
+  color: #e4ddcf;
+}
+.Header-p-logo {
+  margin: auto 0;
+  font-size: 1.5rem;
+  text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
+}
+.Header-nav {
+  text-align: -webkit-right;
+}
+.Header-hamburger {
+  display: none;
+}
+.Header-ul {
+  display: none;
+  right: 1.5em;
+  z-index: 2;
+}
+.Header-li {
+  padding: 0.5em 0;
+}
+.Header-a {
+  font-size: 1.2em;
+}
+.Header-a:hover {
+  background-color: rgba(228, 221, 207, 0.0784313725);
+}
+@media (max-width: 768px) {
+  .Header-hamburger {
+    display: block;
+  }
+  .Header-ul {
+    display: none;
+  }
+  .Header-ul.show {
+    display: block;
+    padding-top: 2em;
+    -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(30, 30, 30, 0.21);
+    -webkit-backdrop-filter: blur(1.2px);
+            backdrop-filter: blur(1.2px);
+    border-radius: 1rem;
+    -webkit-backdrop-filter: blur(4.2px);
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    animation: fade-in 2s linear;
+    -webkit-animation: fade-in 2s linear;
+    -moz-animation: fade-in 2s linear;
+    -ms-animation: fade-in 2s linear;
+    -o-animation: fade-in 2s linear;
+  }
+  .Header-a {
+    font-size: 1em;
+  }
+}
+@media (min-width: 768px) {
+  .Header-ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 2em;
+  }
+}
+
+@-webkit-keyframes focus-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes focus-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
