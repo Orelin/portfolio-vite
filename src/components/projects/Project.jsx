@@ -31,9 +31,9 @@ function Project() {
                         <p className="Project-carrousel-description">- Includes a currency converter.</p>
                         <p className="Project-carrousel-description">- Skills:</p>
                         <div className="Project-carrousel-icons">
-                            <IoLogoHtml5      className="Project-carrousel-icon" alt="Logo html"       style={{ color: 'red' }} />
-                            <IoLogoCss3       className="Project-carrousel-icon" alt="Logo Css"        style={{ color: 'blue' }} />
-                            <IoLogoJavascript className="Project-carrousel-icon" alt="Logo JavaScript" style={{ color: 'yellow' }} />
+                            <IoLogoHtml5      className="Project-carrousel-icon" alt="Logo html"       style={{ color: '#f16a30' }} />
+                            <IoLogoCss3       className="Project-carrousel-icon" alt="Logo Css"        style={{ color: '#306af1' }} />
+                            <IoLogoJavascript className="Project-carrousel-icon" alt="Logo JavaScript" style={{ color: '#f3dd55' }} />
                             
                         </div>
                         <a className="Project-carrousel-link" href="https://calcgasto.netlify.app/" target='_blank'>Open Project here!</a>
