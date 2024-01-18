@@ -16,12 +16,12 @@ function Project() {
                     <div className="Project-carrousel-container">
                         <img
                             className="Project-carrousel-img"
-                            src="https://drive.google.com/uc?export=download&id=1Xy6hjORS2xdzKtLRJSpfeopnZbRoby64"
+                            src="https://i.ibb.co/Bj9gvYD/calc-Gasto1.png"
                             alt="Project 1 Imagen 1"
                         />
                         <img
                             className="Project-carrousel-img"
-                            src="https://drive.google.com/uc?export=download&id=14nMh2qSnxLGTec-y1EgFjwGiDwzayNXJ"
+                            src="https://i.ibb.co/hX1SP7F/calc-Gasto2.png"
                             alt="Project 1 Imagen 2"
                         />
                     </div>
@@ -47,12 +47,12 @@ function Project() {
                     <div className="Project-carrousel-container">
                         <img
                             className="Project-carrousel-img"
-                            src="https://drive.google.com/uc?export=download&id=1431nMoMoytL6nDkp3hgMlnhwO-FyERyX"
+                            src="https://i.ibb.co/Cn3wywh/follower1.jpg"
                             alt="Project 2 Imagen 1"
                         />
                         <img
                             className="Project-carrousel-img"
-                            src="https://drive.google.com/uc?export=download&id=142_a1lpIRaC6899I1wurIWjydWPcPsV5"
+                            src="https://i.ibb.co/8sKBWKL/follower2.jpg"
                             alt="Project 2 Imagen 2"
                         />
                     </div>
